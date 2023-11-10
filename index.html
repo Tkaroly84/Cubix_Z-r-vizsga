@@ -1,0 +1,153 @@
+<html>
+
+<head>
+    <script src="bundle.js" type="module"></script>
+    <title>JavaScript Záróvizsga</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <div class="header">
+        <h1>COVID 19-Diagram</h1>
+    </div>
+
+    <!-- keresés  -->
+
+    <div class="search-bar">
+        <div class="form-container">
+            <form action="" id="weather-form">
+                <div id="city" class="form-item">
+                    <input id="city-input" list="browsers" required type="text" placeholder="City">
+                    <datalist id="browsers">
+                        <option value="Hungary">
+                        <option value="France">
+                        <option value="Slovakia">
+                        <option value="Slovenia">
+                        <option value="Austria">
+                        <option value="Romania"></option>
+                    </datalist><br>
+                </div>
+
+                <div id="select-bootstrap">
+                    <select class="form-item" aria-label="Default select example">
+                        <option selected>Válassza ki az országot:</option>
+                        <option value="1">Hungary</option>
+                        <option value="2">France</option>
+                        <option value="3">Slovakia</option>
+                        <option value="3">Slovenia</option>
+                        <option value="3">Austria</option>
+                        <option value="3">Romania</option>
+                    </select>
+                </div>
+
+                <div id="select-bootstrap">
+                    <select class="form-item" aria-label="Default select example">
+                        <option selected>Válassza ki az országot:</option>
+                        <option value="1">Hungary</option>
+                        <option value="2">France</option>
+                        <option value="3">Slovakia</option>
+                        <option value="3">Slovenia</option>
+                        <option value="3">Austria</option>
+                        <option value="3">Romania</option>
+                    </select>
+                </div>
+
+                <div id="date" class="form-item">
+                    <input id="date-input" required type="date">
+                </div>
+
+                <div>
+                    <button id="submit" type="submit" class="btn btn-primary">Search</button>
+                </div>
+
+                <!-- Szűrés gomb 1-->
+
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Szűrés
+                </button>
+
+                <!-- Szűrés Modal -->
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Szűrési feltételek</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                      halálozási szám
+                                    </label> 
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                     nemtom uj szűrés
+                                    </label> 
+                                </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button id="submit" type="submit" class="btn btn-primary">Search</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <!-- hibakezelés-->
+
+    <div class="content">
+        <div id="error-message" style="display: none;">Error while retrieving weather data</div>
+        <div id="cards-container"></div>
+    </div>
+</div>
+    <!-- footer-tudástár-->
+
+<div class="card text-center">
+        <div class="card-header">
+            Tudástár
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Covid-19 Videók</h5><br>
+            <div id="iframe">
+                <iframe width="300" height="200" src="https://www.youtube.com/embed/xgfsQc63P-Y?si=9S4rziLPMutUZQBj"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <iframe width="300" height="200" src="https://www.youtube.com/embed/SeB4FAL8r2M?si=GKqSOgPhSMb6bXVY"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <iframe width="300" height="200" src="https://www.youtube.com/embed/k7K7NFEAIP4?si=pt4buctd_lJ_WSQK"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="card-footer text-body-secondary">
+            Cubixedu-Vizsgafeladat: Tóth Károly
+        </div>
+</div>
+
+</body>
+</html>
+
+<!--
+
+kiegészítők: 
+
+     zászlók: 
+
+    <img src="images/francia zászló copy.jpeg" alt="francia">
+    <img src="images/magyar zászló copy.jpeg" alt="magyar">
+-->

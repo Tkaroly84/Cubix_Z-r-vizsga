@@ -1,0 +1,82 @@
+@import "./node_modules/bootstrap/scss/bootstrap";
+
+:root {
+    --font-color: #222222;
+    --font-color-covid: #ffffff;
+    --primary-color: #00C4C4;
+    --primary-light-color: #90DEDE;
+    --secondary-color: #004545;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  color: var(--font-color);
+}
+
+.header {
+  margin: auto;  
+  margin-top: 2rem;
+  display: flex;
+  padding: 2px 24px;  
+  background-image: url(/Users/karesz/Desktop/Cubix_Záróvizsga/dist/images/baktérium.jpg);
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  width: 75%;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+     h1{
+    font-size: 3rem;
+    color: var(--font-color-covid);
+   }
+}
+
+.search-bar {
+  margin-top: 2rem;
+  display: block;
+  background-color: var(--primary-light-color);
+  padding: 16px;
+}
+
+.search-bar > .form-container > form {
+  display: block;
+  text-align: center;
+  gap: 16px;
+  margin: 0;
+  padding: 5px;
+}
+
+form > div{
+  padding: 10px;
+}
+
+.form-item > option {
+  height: 50px;
+  line-height: 32px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+  padding: 0 8px;
+  background-color: rgba(255,255,255, 0.8);
+}
+
+select{
+  border-radius: 4px;
+  margin: 0;
+  padding: 10 1px;
+  width: 200px;
+  text-align: center;
+}
+
+.modal-body > div{
+margin: auto;
+}
+
+#iframe{
+  display: flex;
+  justify-content: space-evenly !important;
+}
