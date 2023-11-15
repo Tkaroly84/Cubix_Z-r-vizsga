@@ -1,28 +1,24 @@
-import 'Karesz-card';
+let cardCounter = 0;
 
-let cardCounter=0;
+export const addCard = ({ country, capital_city, confirmed, deaths }) => {
+    console.log(country, capital_city, confirmed, deaths);
 
-export const addCard = (city, date, weatherData) => {
-    console.log(city, date, weatherData);
-
-    const minTemp = Math.round(weatherData.minTemp);
-    const maxTemp = Math.round(weatherData.maxTemp);
-
-    const cardsContainer = document.getElementById('cards-container');
+    const cardsContainer = document.getElementById('cards');
     cardsContainer.insertAdjacentHTML('afterbegin', `
-        <Karesz-card title="${city} - ${date}">
+        <zizi-card title="${country}">
             <div class="card-content">
-                <div>${minTemp}°C</div>
-                <div>${maxTemp}°C</div>
+                <div>Főváros: ${capital_city}</div>
+                <div>Megbetegedések száma: ${confirmed}</div>
+                <div>Elhunytak száma: ${deaths}</div>
                 <div>
-                    <button id="delete-btn-${cardCounter}">Delete</button>
+                    <button class="btn btn-warning id="delete-btn-${cardCounter}">Delete</button>
                 </div>
             </div>
-        </Karesz-card>
-    `)
+        </zizi-card>
+    `);
 
-    //document.querySelector('#delete-btn-${cardCounter}')
-        //.addEventListener('click', (e) => e.target.closest('zizi-card').remove());
+    document.querySelector(`#delete-btn-${cardCounter}`)
+        .addEventListener('click', (e) => e.target.closest('zizi-card').remove());
         
     cardCounter++;
 }

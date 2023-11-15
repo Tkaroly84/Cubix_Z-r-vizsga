@@ -1,6 +1,9 @@
+import { initForm } from "./forms";
 import "./styles.scss";
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import 'zizi-card';
 
-document.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('DOMContentLoaded', () => {
     initForm();
+    fetchData();
 })

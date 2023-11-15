@@ -12040,25 +12040,29 @@ form > div {
   padding: 10px;
 }
 
-.form-item > option {
-  height: 50px;
-  line-height: 32px;
-  border: 1px solid var(--secondary-color);
-  border-radius: 4px;
-  padding: 0 8px;
-  background-color: rgba(255, 255, 255, 0.8);
-}
-
-select {
-  border-radius: 4px;
-  margin: 0;
-  padding: 10 1px;
-  width: 200px;
+#country-input {
   text-align: center;
 }
 
-.modal-body > div {
-  margin: auto;
+.gombok {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards-container {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+}
+
+zizi-card {
+  text-align: center;
+  width: 25%;
+  animation: fadeIn 10s;
+  background-color: #00C4C4;
 }
 
 #iframe {
