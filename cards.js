@@ -11,7 +11,7 @@ export const addCard = ({ country, capital_city, confirmed, deaths }) => {
                 <div>Megbetegedések száma: ${confirmed}</div>
                 <div>Elhunytak száma: ${deaths}</div>
                 <div>
-                    <button class="btn btn-warning id="delete-btn-${cardCounter}">Delete</button>
+                    <button class="btn btn-warning" id="delete-btn-${cardCounter}">Delete</button>
                 </div>
             </div>
         </zizi-card>
