@@ -16,10 +16,11 @@
     <!-- keresés  -->
 
     <div class="search-bar">
+        <div id="image1"></div>    
         <div class="form-container">
-            <form action="" id="weather-form">
-                <div id="city" class="form-item">
-                    <input id="city-input" list="browsers" required type="text" placeholder="City">
+            <form action="" id="dataForm">
+                <div id="country" class="form-item">
+                    <input id="country-input" list="browsers" required type="text" placeholder="Válasszon országot:">
                     <datalist id="browsers">
                         <option value="Hungary">
                         <option value="France">
@@ -29,94 +30,27 @@
                         <option value="Romania"></option>
                     </datalist><br>
                 </div>
-
-                <div id="select-bootstrap">
-                    <select class="form-item" aria-label="Default select example">
-                        <option selected>Válassza ki az országot:</option>
-                        <option value="1">Hungary</option>
-                        <option value="2">France</option>
-                        <option value="3">Slovakia</option>
-                        <option value="3">Slovenia</option>
-                        <option value="3">Austria</option>
-                        <option value="3">Romania</option>
-                    </select>
-                </div>
-
-                <div id="select-bootstrap">
-                    <select class="form-item" aria-label="Default select example">
-                        <option selected>Válassza ki az országot:</option>
-                        <option value="1">Hungary</option>
-                        <option value="2">France</option>
-                        <option value="3">Slovakia</option>
-                        <option value="3">Slovenia</option>
-                        <option value="3">Austria</option>
-                        <option value="3">Romania</option>
-                    </select>
-                </div>
-
-                <div id="date" class="form-item">
-                    <input id="date-input" required type="date">
-                </div>
-
-                <div>
-                    <button id="submit" type="submit" class="btn btn-primary">Search</button>
-                </div>
-
-                <!-- Szűrés gomb 1-->
-
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Szűrés
-                </button>
-
-                <!-- Szűrés Modal -->
-
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Szűrési feltételek</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-<!-- Szűrés lista -->
-                            <div class="modal-body">
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" checked>
-                                    <label class="form-check-label" for="defaultCheck1">
-                                      Esetek száma
-                                    </label> 
-                                </div>
-                                
-                                <div>
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" checked>
-                                    <label class="form-check-label" for="defaultCheck2">
-                                     Védőoltás típusa
-                                    </label> 
-                                </div>
-
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button id="submit" type="submit" class="btn btn-primary">Search</button>
-                            </div>
-                        </div>
+                <div class="gombok">
+                    <div>
+                        <button id="reset" type="reset" class="btn btn-warning">Törlés</button>
+                    </div>
+                    <div>
+                        <button id="submit" type="submit" class="btn btn-primary">Search</button>
                     </div>
                 </div>
-
             </form>
         </div>
+        <div id="image2"></div>    
     </div>
 
-    <!-- hibakezelés-->
+    <!-- Kártyák/adatok-->
 
-    <div class="content">
-        <div id="error-message" style="display: none;">Error while retrieving weather data</div>
-        <div id="cards-container"></div>
-    </div>
-</div>
+    <div class="cards-container" id="cards"></div>
+
+
     <!-- footer-tudástár-->
 
-<div class="card text-center">
+    <div class="card text-center" style="background-color: #0a5656; color: white;">
         <div class="card-header">
             Tudástár
         </div>
@@ -140,17 +74,8 @@
         <div class="card-footer text-body-secondary">
             Cubixedu-Vizsgafeladat: Tóth Károly
         </div>
-</div>
+    </div>
 
 </body>
+
 </html>
-
-<!--
-
-kiegészítők: 
-
-     zászlók: 
-
-    <img src="images/francia zászló copy.jpeg" alt="francia">
-    <img src="images/magyar zászló copy.jpeg" alt="magyar">
--->

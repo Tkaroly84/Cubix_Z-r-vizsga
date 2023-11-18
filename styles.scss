@@ -4,11 +4,12 @@
     --font-color: #222222;
     --font-color-covid: #ffffff;
     --primary-color: #00C4C4;
-    --primary-light-color: #90DEDE;
+    --primary-light-color: #677e7e;
     --secondary-color: #004545;
 }
 
 body {
+  background-color: #bdeeee;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   color: var(--font-color);
@@ -19,7 +20,8 @@ body {
   margin-top: 2rem;
   display: flex;
   padding: 2px 24px;  
-  background-image: url(/Users/karesz/Desktop/Cubix_Záróvizsga/dist/images/baktérium.jpg);
+  background-image: url(1652790932-covid-unsplash.jpg);
+  //background-color: #8d0404;  
   background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat; 
@@ -38,7 +40,8 @@ body {
 
 .search-bar {
   margin-top: 2rem;
-  display: block;
+  display: flex;
+  justify-content: space-around;
   background-color: var(--primary-light-color);
   padding: 16px;
   border-radius: 15px;
@@ -49,8 +52,10 @@ body {
   width: 30%;
   border-radius: 15px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-  background-color: #8d0404;
-
+  background-image: url(baktérium.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  //background-color: #8d0404;
 }
 
 .search-bar > .form-container > form {
@@ -64,26 +69,46 @@ body {
 form > div{
   padding: 10px;
 }
-
-.form-item > option {
-  height: 50px;
-  line-height: 32px;
-  border: 1px solid var(--secondary-color);
-  border-radius: 4px;
-  padding: 0 8px;
-  background-color: rgba(255,255,255, 0.8);
-}
-
-select{
-  border-radius: 4px;
-  margin: 0;
-  padding: 10 1px;
-  width: 200px;
+#country-input{
   text-align: center;
 }
+#image1{
+  width: 30%;
+  border-radius: 15px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  background-image: url(letöltés.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-.modal-body > div{
-margin: auto;
+#image2{
+  width: 30%;
+  border-radius: 15px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  background-image: url(letöltés1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gombok{
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards-container {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+}
+
+zizi-card {
+  text-align: center;
+  width: 25%;
+  animation: fadeIn 10s;
+  background-color: #00C4C4;
 }
 
 #iframe{
